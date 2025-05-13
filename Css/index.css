@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #397534ff;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+    background-color: #ffdd57ff;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+pre {
+    font-style: italic;
+    text-align: center;
+    font-weight: 400;
+    font-size: large;
+}
+
+span {
+    font-weight: bold;
+    text-decoration: underline;
+    display: block;
+    text-align: center;
+}
+
+.Contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.item {
+    flex: 1 1 calc(25% - 40px); /* 4 por fila */
+    max-width: calc(25% - 40px);
+    min-width: 200px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    opacity: 0.5;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    object-fit: cover;
+}
+
+.item img:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .item {
+        flex: 1 1 calc(50% - 40px); /* 2 por fila */
+        max-width: calc(50% - 40px);
+    }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+    .item {
+        flex: 1 1 100%; /* Uno por fila */
+        max-width: 100%;
+    }
+}
