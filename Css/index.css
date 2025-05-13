@@ -1,0 +1,57 @@
+header {
+    height: auto; /* Usamos auto para que se ajuste al contenido */
+    background-color: #397534;
+}
+
+header img {
+    width: 100%;
+    height: auto; /* Mantiene proporción */
+    display: block;
+}
+
+.Contenedor {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos bajen si no caben */
+    gap: 20px; /* Espacio entre items */
+    margin-top: 50px;
+    box-sizing: border-box;
+    padding: 10px;
+    justify-content: center;
+}
+
+.item {
+    flex: 1 1 calc(25% - 40px); /* 4 items por fila menos padding y gap */
+    max-width: calc(25% - 40px);
+    min-width: 200px;
+    height: auto;
+    border: solid 1px green;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    object-fit: cover;
+}
+
+/* Responsive para tablets */
+@media (max-width: 768px) {
+    .item {
+        flex: 1 1 calc(50% - 40px); /* 2 por fila */
+        max-width: calc(50% - 40px);
+    }
+}
+
+/* Responsive para móviles */
+@media (max-width: 480px) {
+    .item {
+        flex: 1 1 100%; /* Uno por fila */
+        max-width: 100%;
+    }
+}
