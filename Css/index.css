@@ -20,13 +20,25 @@ header img {
     display: block;
 }
 
-pre {
+/*pre {
     font-style: italic;
     text-align: center;
     font-weight: 400;
     font-size: large;
+}*/
+pre {
+    font-style: italic;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: clamp(1rem, 2.5vw, 1.5rem); /* Tamaño adaptable */
+    padding: 10px;
+    margin: 0 auto;
+    white-space: pre-wrap; /* Permite el salto de línea */
+    word-wrap: break-word; /* Rompe palabras largas */
+    max-width: 100%; /* No se desborda del contenedor */
+    box-sizing: border-box;
 }
-
 span {
     font-weight: bold;
     text-decoration: underline;
