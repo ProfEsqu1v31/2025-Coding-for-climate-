@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+@import url("index.css");
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+#cuerpo {
+    background-image: url(../imagenes/fondoooo0000000.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+#titulo {
+    width: 100%;
+    text-align: center;
+    padding-top: 60px;
+    font-size: 36px;
+    color: #103b44;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Special Gothic Expanded One", sans-serif;
+}
+
+
+.contenedor-cajas {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    padding: 50px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.columna-izquierda {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rectangulo {
+    width: 520px;
+    height: 200px; 
+    background-color: rgb(170, 190, 210);
+    background-image: url(../imagenes/inundacionimagenarriba.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: solid 4px rgb(170,190,210);
+}
+
+.fila-cuadros {
+    display: flex;
+    gap: 40px;
+}
+
+.fila-cuadros .cuadro {
+    width: 240px;
+    height: 240px;
+    background-color: rgb(170,190,210);
+    border: solid 4px rgb(170,190,210);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.fila-cuadros .cuadro:first-child {
+    background-image: url(../imagenes/inundacioncuadradoizquierdo.webp);
+}
+
+.fila-cuadros .cuadro:last-child {
+    background-image: url(../imagenes/inundacioncuadradoderecho.jpg);
+}
+
+.columna-derecha {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.cuadro-derecha {
+    width: 500px;
+    background-color: rgb(170,190,210);
+    font-size: 23px;
+    padding: 25px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    font-family: 'Barlow', sans-serif;
+}
+

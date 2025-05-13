@@ -1,0 +1,68 @@
+@import url("index.css");
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #b3ccc0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+  }
+  
+ 
+
+  
+
+  .contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px 80px;
+  }
+  
+  /* Coso azul */
+  .onda-azul {
+    width: 500px;
+    height: 300px;
+    background: linear-gradient(to bottom, #a4c7f0, #457edf);
+    border-top-left-radius: 200px;
+    border-bottom-right-radius: 150px;
+    transform: rotate(-10deg);
+    margin-top: 30px;
+  }
+  
+
+  .texto {
+    text-align: right;
+    color: #103b44;
+
+  }
+  
+  .texto h3 {
+    margin: 100;
+    margin-top:50px ;
+    font-size: 16px;
+    font-weight: normal;
+    justify-content: space-between;
+    font-family: 'Barlow', sans-serif;
+
+  }
+  
+  .texto h1 {
+    margin: 10px 0 0 0;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+
+  footer {
+    text-align: center;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: sans-serif; /* o la fuente que estés usando */
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}

@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+@import url("index.css");
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #80aaff;
+    color: #1a1a1a;
+    
+  }
+  
+  #cuerpo{
+    background-image:url(../imagenes/fondoooo0000000.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    }
+  
+    .contenedor-cajas {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 60px;
+      padding: 50px;
+      max-width: 1300px;
+      margin: 0 auto;
+  }
+  
+  header {
+    width: 100%;
+    height: 8vh;
+    background-color: #4f93c4;
+    position: relative;
+  }
+  
+  .Ancho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    
+  }
+  
+  .logo {
+    width: 370px;
+  }
+  
+  .logo-img {
+    width: 100%;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  main {
+    flex: 1;
+    position: relative;
+    color: black; 
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  h1 {
+    position: absolute;
+    top: 10px;
+    left: 700px;
+    font-size: 70px;
+    color: #103b44;
+    z-index: 3;
+  }
+  
+  .cuadrado-1,
+  .cuadrado-2 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+  }
+  
+  .cuadrado-1 {
+    background-color: #4f93c4;
+    top: 30px; 
+    left: 100px;
+    z-index: 2;
+}
+
+.cuadrado-2 {
+    background-color: #4f93c4;
+    top: 100px; 
+    left: 150px;
+    z-index: 1;
+}
+
+  
+  .cuadrado-pequeno {
+    width: 60%; 
+    height: 60%; 
+    position: absolute;
+    top: 20%; 
+    left: 20%; 
+  }
+  
+  .imagen-pequena {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    display: block;
+  }
+  
+  .cuadrado-3 {
+    width: 550px;
+    height: 380px;
+    position: absolute;
+    top: 70px;
+    right: 100px; 
+    z-index: 1;
+    font-size: 18px;
+    text-align: center;
+    background-color: rgb(170, 190, 210);
+    border-radius: 5%;
+    justify-content: center;
+  }
+  
+  
+  footer {
+    color: white;
+    background-color: #264b65c4   ;
+    padding: 20px;
+    text-align: center; 
+    position: relative;
+    bottom: 0;
+    margin-top:50px;
+    width: 100%;
+    height: 70px;
+  }
+  
+  
